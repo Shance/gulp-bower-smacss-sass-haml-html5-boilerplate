@@ -101,7 +101,7 @@ var changeEvent = function(evt) {
 // Compile HAML into HTML
 gulp.task('haml', function() {
     return gulp.src(appFiles.haml)
-        .pipe($.haml())
+        .pipe($.rubyHaml({doubleQuote: true}))
         .pipe(gulp.dest(paths.haml.dest))
         .pipe(livereload())
         .pipe(nativeNotify ? $.notify("Haml compiled!") : gutil.noop());
@@ -197,7 +197,7 @@ gulp.task('sprite', function() {
 gulp.task('watch', ['styles', 'scripts'], function() {
     livereload.listen();
 
-    gulp.watch(appFiles.styles, ['haml']).on('change', function(evt) {
+    gulp.watch(appFiles.haml, ['haml']).on('change', function(evt) {
         changeEvent(evt);
     });
 

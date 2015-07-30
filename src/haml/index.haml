@@ -1,0 +1,83 @@
+!!! 5
+
+-# paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+
+-# <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+-# <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+-# <!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+-# <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+%html
+
+    %head
+
+        -# ==========================================================================
+        -# Head
+        -# ==========================================================================
+
+        %meta{:charset => "utf-8"}
+
+        %title Boilerplate
+        %meta{:name => "description", :content => ""}
+        -# %meta{:name => "keywords", :content => ""}
+        -# %meta{:name => "author", :content => ""}
+
+        -# Mobile
+        -# ==========================================================================
+
+        %meta{:name => "viewport", :content => "width=device-width, initial-scale=1"}
+        -# %meta{:name => "HandheldFriendly", :content => "True"}
+        -# %meta{:name => "MobileOptimized", :content => "320"}
+
+        -# iOS web app
+
+        -# %meta{:name => "apple-mobile-web-app-capable", :content => "yes"}
+        -# %meta{:name => "apple-mobile-web-app-status-bar-style", :content => "black"}
+        -# %link{:rel => "apple-touch-startup-image", :href => "/img/touch/startup.png"}
+
+        -# Favicon
+        -# ==========================================================================
+
+        %link{:href => "/favicon.ico", :rel => "shortcut icon"}
+
+        -# iPad 3 Retina Display
+
+        -# %link{:rel => "apple-touch-icon-precomposed", :sizes => "144x144", :href => "/img/touch/apple-touch-icon-144x144-precomposed.png"}
+
+        -# iPhone 4 Retina display
+
+        -# %link{:rel => "apple-touch-icon-precomposed", :sizes => "114x114", :href => "/img/touch/apple-touch-icon-114x114-precomposed.png"}
+
+        -# iPad non-Retina display
+
+        -# %link{:rel => "apple-touch-icon-precomposed", :sizes => "72x72", :href => "/img/touch/apple-touch-icon-72x72-precomposed.png"}
+
+        -# Non-Retina iPhone, iPod Touch, Android 2.1+
+
+        -# %link{:rel => "apple-touch-icon-precomposed", :href => "/img/touch/apple-touch-icon-57x57-precomposed.png"}
+
+        -# Nokia
+
+        -# %link{:rel => "shortcut icon", :href => "/img/touch/apple-touch-icon.png"}
+
+        -# CSS
+        -# ==========================================================================
+
+        %link{:rel => "stylesheet", :href => "/css/styles.css"}
+        -# %link{:rel => "stylesheet", :media => "only screen and (min-width: 45em)", :href => "/css/widescreen.css"}
+
+        -# IE Fixes
+        -# ==========================================================================
+
+        -# [if lt IE 7]
+            %script{:src => "//ie7-js.googlecode.com/svn/version/2.1(beta4)/IE7.js"}
+        -# [if lt IE 8]
+            %script{:src => "//ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"}
+        -# /[if (lt IE 9) & (!IEMobile)]
+            %script{:src => "//ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"}
+            %script{:src => "//html5shiv.googlecode.com/svn/trunk/html5.js"}
+    %body
+
+        -# Custom JS
+
+        %script{:src => "/js/app.js"} 
