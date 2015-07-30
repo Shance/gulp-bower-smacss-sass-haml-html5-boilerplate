@@ -8,7 +8,7 @@ var paths = {
         src: basePaths.src + 'img/',
         dest: basePaths.dest + 'img/'
     },
-    html: {
+    haml: {
         src: basePaths.src + 'haml/',
         dest: basePaths.dest + '/'
     },
@@ -27,6 +27,7 @@ var paths = {
 };
 
 var appFiles = {
+    haml: paths.haml.src + '**/*.haml',
     styles: paths.styles.src + '**/*.scss',
     scripts: [
         paths.scripts.src + 'app.js'
