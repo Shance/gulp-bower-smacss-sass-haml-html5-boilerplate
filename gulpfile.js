@@ -39,9 +39,7 @@ var vendorFiles = {
     styles: '',
     scripts: [
         paths.vendor + 'jquery/dist/jquery.js',
-        paths.vendor + 'slick.js/slick/slick.js',
-        paths.vendor + 'magnific-popup/dist/jquery.magnific-popup.js',
-        paths.vendor + 'jquery-form-validator/form-validator/jquery.form-validator.js',
+        paths.vendor + 'material-design-lite/material.js',
         paths.scripts.src + 'modal.js',
         paths.scripts.src + 'tab.js'
     ]

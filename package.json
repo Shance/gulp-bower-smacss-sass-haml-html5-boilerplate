@@ -26,12 +26,13 @@
     "jshint-stylish": "*",
     "run-sequence": "*",
     "gulp-livereload": "*",
-    "gulp-haml": "~0.1.5"
+    "gulp-haml": "~0.1.5",
+    "gulp-ruby-haml": "0.0.4"
   },
   "dependencies": {
     "psi": "*"
   },
-  "scripts" :{
-    "postinstall" : "bower install"
-   }
+  "scripts": {
+    "postinstall": "bower install"
+  }
 }
